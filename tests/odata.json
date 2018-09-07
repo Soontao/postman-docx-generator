@@ -1,0 +1,271 @@
+{
+    "info": {
+        "_postman_id": "7bde0a53-5e6d-49b5-b41b-0b63359c8375",
+        "name": "CheryTest",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+    },
+    "item": [
+        {
+            "name": "QueryByID",
+            "request": {
+                "auth": {
+                    "type": "basic",
+                    "basic": [
+                        {
+                            "key": "password",
+                            "value": "Welcome3",
+                            "type": "string"
+                        },
+                        {
+                            "key": "username",
+                            "value": "ys1005",
+                            "type": "string"
+                        }
+                    ]
+                },
+                "method": "GET",
+                "header": [
+                    {
+                        "key": "Accept",
+                        "value": "application/json"
+                    },
+                    {
+                        "key": "Accept-Language",
+                        "value": "zh-CN"
+                    },
+                    {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                    },
+                    {
+                        "key": "x-csrf-token",
+                        "value": "3KI7TqzLgnuFdmfnwfkGzw=="
+                    }
+                ],
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\n\t\"UploadedBy\":\"测试员工XX1\",\n\t\"UploadedAt\":\"/Date(1532330892373)/\",\n\t\"FileName\":\"IMG_20180619_153425-compressed.jpg\",\n\t\"FileSize\":35431,\n\t\"CMISObjectId\":\"0XfZr1YK8pUC6RNOFk51WRJ9OcqIgNkg_K93t9OHyRc\",\n\t\"Url\":\"https\",\n\t\"RefObjectId\":\"00163E630F571EE8A2FC19155E2F0595\",\n\t\"RefObjectType\":\"2\"\n}"
+                },
+                "url": {
+                    "raw": "https://my500457.c4c.saphybriscloud.cn/sap/c4c/odata/cust/v1/servicemobileapp/ServiceRequestCollection?$top=10&$orderby=CreationDateTime desc",
+                    "protocol": "https",
+                    "host": [
+                        "my500457",
+                        "c4c",
+                        "saphybriscloud",
+                        "cn"
+                    ],
+                    "path": [
+                        "sap",
+                        "c4c",
+                        "odata",
+                        "cust",
+                        "v1",
+                        "servicemobileapp",
+                        "ServiceRequestCollection"
+                    ],
+                    "query": [
+                        {
+                            "key": "$top",
+                            "value": "10"
+                        },
+                        {
+                            "key": "$orderby",
+                            "value": "CreationDateTime desc"
+                        }
+                    ]
+                },
+                "description": "Chery Test Ticket Query"
+            },
+            "response": [
+                {
+                    "name": "QueryByID-Query by ID",
+                    "originalRequest": {
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Accept",
+                                "value": "application/json"
+                            },
+                            {
+                                "key": "Accept-Language",
+                                "value": "zh-CN"
+                            },
+                            {
+                                "key": "Content-Type",
+                                "value": "application/json"
+                            },
+                            {
+                                "key": "x-csrf-token",
+                                "value": "3KI7TqzLgnuFdmfnwfkGzw=="
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\n\t\"UploadedBy\":\"测试员工XX1\",\n\t\"UploadedAt\":\"/Date(1532330892373)/\",\n\t\"FileName\":\"IMG_20180619_153425-compressed.jpg\",\n\t\"FileSize\":35431,\n\t\"CMISObjectId\":\"0XfZr1YK8pUC6RNOFk51WRJ9OcqIgNkg_K93t9OHyRc\",\n\t\"Url\":\"https\",\n\t\"RefObjectId\":\"00163E630F571EE8A2FC19155E2F0595\",\n\t\"RefObjectType\":\"2\"\n}"
+                        },
+                        "url": {
+                            "raw": "https://my500457.c4c.saphybriscloud.cn/sap/c4c/odata/cust/v1/servicemobileapp/ServiceRequestCollection?$filter=ID eq '504829'",
+                            "protocol": "https",
+                            "host": [
+                                "my500457",
+                                "c4c",
+                                "saphybriscloud",
+                                "cn"
+                            ],
+                            "path": [
+                                "sap",
+                                "c4c",
+                                "odata",
+                                "cust",
+                                "v1",
+                                "servicemobileapp",
+                                "ServiceRequestCollection"
+                            ],
+                            "query": [
+                                {
+                                    "key": "$filter",
+                                    "value": "ID eq '504829'"
+                                }
+                            ]
+                        }
+                    },
+                    "status": "OK",
+                    "code": 200,
+                    "_postman_previewlanguage": "json",
+                    "header": [
+                        {
+                            "key": "Connection",
+                            "value": "keep-alive",
+                            "name": "Connection",
+                            "description": "Options that are desired for the connection"
+                        },
+                        {
+                            "key": "Content-Length",
+                            "value": "1355",
+                            "name": "Content-Length",
+                            "description": "The length of the response body in octets (8-bit bytes)"
+                        },
+                        {
+                            "key": "Content-Type",
+                            "value": "application/json; charset=utf-8",
+                            "name": "Content-Type",
+                            "description": "The mime type of this content"
+                        },
+                        {
+                            "key": "EagleId",
+                            "value": "b68cee4715353348502033030e",
+                            "name": "EagleId",
+                            "description": "Custom header"
+                        },
+                        {
+                            "key": "Server",
+                            "value": "Tengine",
+                            "name": "Server",
+                            "description": "A name for the server"
+                        },
+                        {
+                            "key": "Timing-Allow-Origin",
+                            "value": "*",
+                            "name": "Timing-Allow-Origin",
+                            "description": "Custom header"
+                        },
+                        {
+                            "key": "Via",
+                            "value": "cache26.l2et2[503,0], kunlun7.cn172[576,0]",
+                            "name": "Via",
+                            "description": "Informs the client of proxies through which the response was sent."
+                        },
+                        {
+                            "key": "c4c-odata-response-time",
+                            "value": "432  ms",
+                            "name": "c4c-odata-response-time",
+                            "description": "Custom header"
+                        },
+                        {
+                            "key": "cache-control",
+                            "value": "no-cache, no-store",
+                            "name": "cache-control",
+                            "description": "Tells all caching mechanisms from server to client whether they may cache this object. It is measured in seconds"
+                        },
+                        {
+                            "key": "content-encoding",
+                            "value": "gzip",
+                            "name": "content-encoding",
+                            "description": "The type of encoding used on the data."
+                        },
+                        {
+                            "key": "dataserviceversion",
+                            "value": "2.0",
+                            "name": "dataserviceversion",
+                            "description": "Custom header"
+                        },
+                        {
+                            "key": "strict-transport-security",
+                            "value": "max-age=31536000; includeSubDomains",
+                            "name": "strict-transport-security",
+                            "description": "A HSTS Policy informing the HTTP client how long to cache the HTTPS only policy and whether this applies to subdomains."
+                        }
+                    ],
+                    "cookie": [
+                        {
+                            "expires": "Tue Jan 19 2038 11:14:07 GMT+0800 (CST)",
+                            "httpOnly": true,
+                            "domain": "my500457.c4c.saphybriscloud.cn",
+                            "path": "/sap/c4c/odata/cust/v1/servicemobileapp/IndividualProductServiceProcessInformationCollection",
+                            "secure": true,
+                            "value": "20180510090126-PL9FezD9WYrFxiha-1QZMg%3d%3d",
+                            "key": "sap-login-XSRF_LQ4"
+                        },
+                        {
+                            "expires": "Tue Jan 19 2038 11:14:07 GMT+0800 (CST)",
+                            "httpOnly": true,
+                            "domain": "my500457.c4c.saphybriscloud.cn",
+                            "path": "/sap/c4c/odata/v1/c4codata/ServiceRequestCollection(%2700163E217B181EE895E912A8BDF02613%27)",
+                            "secure": true,
+                            "value": "20180719051006-KfpSCkIZKV1T9uoi4zWRew%3d%3d",
+                            "key": "sap-login-XSRF_LQ4"
+                        },
+                        {
+                            "expires": "Tue Jan 19 2038 11:14:07 GMT+0800 (CST)",
+                            "httpOnly": true,
+                            "domain": "my500457.c4c.saphybriscloud.cn",
+                            "path": "/sap/c4c/odata/cust/v1/servicemobileapp/ServiceRequestCollection",
+                            "secure": true,
+                            "value": "20180711061937-wCDS7mL-3VNbLgSaETjEhg%3d%3d",
+                            "key": "sap-login-XSRF_LQ4"
+                        },
+                        {
+                            "expires": "Tue Jan 19 2038 11:14:07 GMT+0800 (CST)",
+                            "httpOnly": false,
+                            "domain": "my500457.c4c.saphybriscloud.cn",
+                            "path": "/",
+                            "secure": false,
+                            "value": "sap-client=085",
+                            "key": "sap-usercontext"
+                        },
+                        {
+                            "expires": "Tue Jan 19 2038 11:14:07 GMT+0800 (CST)",
+                            "httpOnly": true,
+                            "domain": "my500457.c4c.saphybriscloud.cn",
+                            "path": "/",
+                            "secure": true,
+                            "value": "NOZWDWQ9bTXBX-T6D11-Zg2ufAOpnBHonJIAFj5jD1c%3d",
+                            "key": "SAP_SESSIONID_LQ4_085"
+                        },
+                        {
+                            "expires": "Tue Jan 19 2038 11:14:07 GMT+0800 (CST)",
+                            "httpOnly": true,
+                            "domain": "my500457.c4c.saphybriscloud.cn",
+                            "path": "/",
+                            "secure": true,
+                            "value": "AjQxMDMBABhLADkANgA2AEMAOABOAEIAUABaADUAIAACAAYwADgANQADABBMAFEANAAgACAAIAAgACAABAAYMgAwADEAOAAwADcAMQA5ADAANQAxADAABQAEAAAACAYAAlgACQACMQD%2fAPwwgfkGCSqGSIb3DQEHAqCB6zCB6AIBATELMAkGBSsOAwIaBQAwCwYJKoZIhvcNAQcBMYHIMIHFAgEBMBowDjEMMAoGA1UEAxMDTFE0AggKIBYQKBcRATAJBgUrDgMCGgUAoF0wGAYJKoZIhvcNAQkDMQsGCSqGSIb3DQEHATAcBgkqhkiG9w0BCQUxDxcNMTgwNzE5MDUxMDEzWjAjBgkqhkiG9w0BCQQxFgQUB5Y7eznTINzQ7niZqp1xg9vmgqEwCQYHKoZIzjgEAwQvMC0CFQCaUfdLFKSuOsRGC5aRvt0O0mqlMwIUdTLp3myo%216Q3Pr8Ji1G4fus5pn0%3d",
+                            "key": "MYSAPSSO2"
+                        }
+                    ],
+                    "body": "{\"d\":{\"results\":[{\"__metadata\":{\"uri\":\"https://my500457.c4c.saphybriscloud.cn/sap/c4c/odata/cust/v1/servicemobileapp/ServiceRequestCollection('00163E6BC23A1ED8AA83C6ED4AAE9E8C')\",\"type\":\"cust.ServiceRequest\",\"etag\":\"W/\\\"datetimeoffset'2018-08-25T04%3A30%3A08.3618130Z'\\\"\"},\"ObjectID\":\"00163E6BC23A1ED8AA83C6ED4AAE9E8C\",\"ETag\":\"\\/Date(1535171408361)\\/\",\"VOCFirstLevID\":\"Z00300002\",\"VOCSecondLevelHist\":\"\",\"VOCSecondLevel\":\"备件订购\",\"VOCSecLevID\":\"Z003\",\"VOCSecLevHistID\":\"Z00300001\",\"VOCName\":\"订购发动机\",\"VOCId\":\"Z005\",\"VINID\":\"LVVDC11B3HD078796\",\"CreationDateTime\":\"\\/Date(1535170879486)\\/\",\"Name\":\"carol抱怨-闭环\",\"NeedRepair\":false,\"NeedRescue\":false,\"NeedRescueStatus\":\"\",\"NeedRescueStatusText\":\"\",\"NeedAppealStatus\":\"\",\"NeedAppealStatusText\":\"\",\"IsNeedTrailer\":false,\"IsDealerReply\":true,\"IsLostCall\":false,\"ID\":\"504844\",\"CarOwnerSex\":\"1\",\"CarOwnerSexText\":\"男\",\"AssigningTimeStr\":\"2018-08-25\",\"AssignOverTime\":\"\\/Date(1535178356000)\\/\",\"AssigningTime\":\"\\/Date(1535170976000)\\/\",\"AssignDateTime\":null,\"AppealApprovalStatus\":\"\",\"AppealApprovalStatusText\":\"\",\"DealerERPID\":\"18176\",\"IsProQuality\":\"CO_YES\",\"IsProQualityText\":\"是\",\"ArrivalConfirmbyCust\":\"\",\"ArrivalConfirmbyCustText\":\"\",\"PUserID\":\"\",\"ServiceAndSupportTeam\":\"QR10000\",\"PhoneNo\":\"18108130822\",\"ProcessingTypeCode\":\"Z003\",\"ProcessingTypeCodeText\":\"抱怨工单\",\"ServiceRequestUserLifeCycleStatusCode\":\"7\",\"ServiceRequestUserLifeCycleStatusCodeText\":\"申请闭环\",\"CloseOverTime\":null,\"ComplainClasscontent\":\"\",\"ComplainClasscontentText\":\"\",\"ZYApintID\":\"\",\"ZYApintLog\":\"\",\"ZYApointfroComplain\":\"\",\"ZYApointfroComplainText\":\"\",\"ZYAptStatus\":\"\",\"ZYAptStatusText\":\"\",\"ZYTechRepID\":\"\",\"CarOwnerProvince\":\"安徽省\",\"CarsSerialID\":\"LVVDC11B3HD078796\",\"CancelledTime\":null,\"CancelledReason\":\"\",\"Cancelled\":false,\"AppointConfirmedTime\":null,\"AppointChangedTime\":null,\"ApplyCloseApproval\":\"CA_2\",\"ApplyCloseApprovalText\":\"审核通过\",\"AcceptedTime\":\"\\/Date(1535171007000)\\/\",\"LicensePlate\":\"川A54321\",\"CompletedTime\":null,\"CloseOverDate\":null,\"CarTypeID\":\"\",\"CarOwnerCity\":\"芜湖市\",\"Car_Longtitude\":\"\",\"Car_Latitute\":\"\",\"AppointStatus\":\"\",\"AppointStatusText\":\"\",\"AppointPeriod\":\"4\",\"AppointPeriodText\":\"12:00-13:00\",\"AppointDate\":\"\\/Date(1535155200000)\\/\",\"ZYTicketStatus\":\"\",\"ZYTicketStatusText\":\"\",\"ZYTechSupfroComplain\":\"\",\"ZYTechSupfroComplainText\":\"\",\"ZYTechRepLog\":\"\",\"VOCFirstLevel\":\"备件供应\",\"CustomerQuestionDesc\":\"carol抱怨-闭环\",\"RevisionCount\":\"0.00\",\"DeclineReason\":\"\",\"DealerQuestionDesc\":\"很健康\",\"AppointContentcontent\":\"01\",\"AppointContentcontentText\":\"保养\",\"ApptCloseApprovalYWStatus\":\"2\",\"ApptCloseApprovalYWStatusText\":\"审核通过\",\"ApptCloseApprovalZXStatus\":\"2\",\"ApptCloseApprovalZXStatusText\":\"审核通过\",\"ApptCloseApprovalReason\":\"\",\"ResDepartTime\":null,\"ResArrivalTime\":null,\"ResCompTime\":null,\"AppointTime\":null,\"CarOwnerPhoneNo\":\"+86 18108130822\",\"ReasonDesc\":\"\",\"RemindingDateTime\":null,\"RemindingCount\":\"0.00\",\"TicketSource\":\"02\",\"TicketSourceText\":\"线上\",\"IsResolved\":\"\",\"IsResolvedText\":\"\",\"IsRescued\":false,\"IsPreSalesAssign\":false,\"LicensePlateID\":\"川A54321\",\"CarOwnerName\":\"思爱普中国\",\"TrailerComp\":\"\",\"TrailerExpReachTime\":null,\"PUSER\":\"18176-112899\"}]}}"
+                }
+            ]
+        }
+    ]
+}

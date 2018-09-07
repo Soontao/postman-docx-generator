@@ -1,0 +1,6 @@
+{
+    "python.pythonPath": "${workspaceFolder}/env/bin/python",
+    "editor.insertSpaces": false,
+    "python.formatting.provider": "yapf",
+    "editor.tabSize": 2,
+}
