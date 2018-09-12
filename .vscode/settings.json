@@ -1,6 +1,7 @@
 {
-    "python.pythonPath": "${workspaceFolder}/env/bin/python",
+    "python.pythonPath": "${workspaceFolder}\\ENV\\Scripts\\python.exe",
     "editor.insertSpaces": false,
     "python.formatting.provider": "yapf",
     "editor.tabSize": 2,
+    "python.linting.enabled": false,
 }
