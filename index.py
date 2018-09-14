@@ -1,4 +1,6 @@
-from generator import generate_document
+from generator import generate_document, DocumentGenerator
 from postman_parser import parsePostmanJson
 
-generate_document(parsePostmanJson("./tests/odata.json"))
+metadata = parsePostmanJson("./tests/odata.json")
+document = DocumentGenerator(metadata)
+document.save("{}.docx".format(metadata.info.name))
